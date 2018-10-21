@@ -42,6 +42,12 @@
   align-items: center;
 }
 
+.link {
+  text-decoration: none;
+  display: flex;
+  align-self: center;
+}
+
 .logo {
   margin-right: 10px;
 }
@@ -55,7 +61,7 @@
 .navbarButtonPanel {
   display: flex;
   flex-direction: row;
-
+  align-items: center;
 }
 
 .navbarButtonSelected {
@@ -97,6 +103,19 @@
   border-radius: 40px;
   color: #EEEEEE;
   font-family: "Montserrat Semi-Bold";
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  flex-basis: auto;
+}
+
+.SignIn {
+  padding: 7px 14px;
+  border-radius: 40px;
+  border: #FFFFFF 1px solid;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  margin: 0px 10px;
   display: flex;
   align-self: center;
   flex-direction: row;

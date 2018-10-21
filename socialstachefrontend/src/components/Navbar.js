@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SocialStacheLogo from '../assets/SocialStacheLogo50.png';
 import NavbarButton from './NavbarButton';
+import SignIn from './SignIn';
 
 class Navbar extends Component {
   render() {
@@ -14,6 +15,7 @@ class Navbar extends Component {
         <div className={"navbarButtonPanel"}>
           <NavbarButton name={"Home"} />
           <NavbarButton name={"About"} />
+          <SignIn />
         </div>
       </div>
     );

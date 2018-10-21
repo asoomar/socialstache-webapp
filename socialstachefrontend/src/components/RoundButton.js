@@ -7,9 +7,11 @@ class RoundButton extends Component {
 
   render() {
     return (
-      <div className={"RoundButton"} onClick={() => this.props.clickHandler()}>
-        {this.props.name}
-      </div>
+      <a href={"#"} className={"link"}>
+        <div className={"RoundButton"}>
+          {this.props.name}
+        </div>
+      </a>
     );
   }
 }
