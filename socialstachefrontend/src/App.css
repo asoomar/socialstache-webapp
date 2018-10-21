@@ -1,5 +1,7 @@
 .App {
+  display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -20,6 +22,116 @@
 
 .App-intro {
   font-size: large;
+}
+
+.HomePage {
+  background: rgb(64,84,173);
+  background: linear-gradient(90deg, rgba(64,84,173,1) 0%, rgba(36,67,125,1) 33%, rgba(18,30,133,1) 100%);
+  width: 100%;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.navbarButton {
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbarButtonPanel {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.navbarButtonSelected {
+  color: #FFFFFF;
+  opacity: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbarTitle {
+  font-family: "Montserrat Semi-Bold";
+  display: flex;
+  align-items: flex-end;
+  font-size: 25px;
+}
+
+.navigation {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /*border: 1px solid black;*/
+  width: 80%;
+  font-family: Montserrat;
+  color: #FFFFFF;
+}
+
+.pageContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.SubtitleContent {
+  font-size: 15px;
+  color: #EEEEEE;
+  font-family: "Montserrat Light";
+}
+
+.TitleContent {
+  font-size: 55px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-bottom: 30px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("./assets/fonts/Montserrat-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat Light;
+  src: url("./assets/fonts/Montserrat-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat Extra Light;
+  src: url("./assets/fonts/Montserrat-ExtraLight.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat Semi-Bold;
+  src: url("./assets/fonts/Montserrat-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @keyframes App-logo-spin {

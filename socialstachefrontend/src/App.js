@@ -1,21 +1,45 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage';
+import { connect } from 'react-redux';
 import './App.css';
 
 class App extends Component {
   render() {
+    let page = <HomePage />;
+    switch (this.props.page) {
+      case "About": {
+        //page = "About"
+        page = <HomePage />
+      }
+      case "Viral Content": {
+        //page = "Viral Content"
+        page = <HomePage />
+      }
+      case "Hashtags": {
+        page = <HomePage />
+      }
+      case "Templates": {
+        page = <HomePage />
+      }
+      default: {
+        page = <HomePage />
+      }
+
+    }
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Navbar />
+        {page}
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    page: state.currentPage
+  }
+};
+
+export default connect(mapStateToProps)(App);
