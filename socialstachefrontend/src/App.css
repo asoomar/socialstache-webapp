@@ -25,11 +25,18 @@
 }
 
 .HomePage {
-  background: rgb(64,84,173);
-  background: linear-gradient(90deg, rgba(64,84,173,1) 0%, rgba(36,67,125,1) 33%, rgba(18,30,133,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomePageHeader {
+  background: rgb(81,148,245);
+  background: linear-gradient(90deg, rgba(81,148,245,1) 0%, rgba(23,84,196,1) 33%, rgba(0,50,212,1) 100%);
   width: 100%;
   padding-top: 140px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,10 +91,23 @@
   flex-direction: column;
 }
 
+.RoundButton {
+  background-color: #0e3377;
+  padding: 15px 30px;
+  border-radius: 40px;
+  color: #EEEEEE;
+  font-family: "Montserrat Semi-Bold";
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  flex-basis: auto;
+}
+
 .SubtitleContent {
   font-size: 15px;
   color: #EEEEEE;
   font-family: "Montserrat Light";
+  margin-bottom: 50px;
 }
 
 .TitleContent {

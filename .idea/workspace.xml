@@ -2,43 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="632fd568-2a68-435a-b489-24cbdb0f1ffa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SocialStache-Webapp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mongoose.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/SocialStacheLogo50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-ExtraLightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/assets/fonts/Montserrat-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/components/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/components/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/components/NavbarButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/pages/HomePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/redux-basics.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/store/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialstachefrontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/socialstachefrontend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialstachefrontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/socialstachefrontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialstachefrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/socialstachefrontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socialstachefrontend/src/components/RoundButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socialstachefrontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/socialstachefrontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialstachefrontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialstachefrontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialstachefrontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialstachefrontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socialstachefrontend/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/socialstachefrontend/src/pages/HomePage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,8 +34,8 @@
       <file leaf-file-name="HomePage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/pages/HomePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            <state relative-caret-position="240">
+              <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -91,8 +58,8 @@
       <file leaf-file-name="NavbarButton.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/components/NavbarButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="168">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -109,20 +76,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/App.css">
+      <file leaf-file-name="RoundButton.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/components/RoundButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/socialstachefrontend/.gitignore">
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="347">
+              <caret line="109" column="22" lean-forward="true" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -150,11 +117,12 @@
         <option value="$PROJECT_DIR$/socialstachefrontend/src/store/reducer.js" />
         <option value="$PROJECT_DIR$/socialstachefrontend/src/components/NavbarButton.js" />
         <option value="$PROJECT_DIR$/socialstachefrontend/src/App.js" />
-        <option value="$PROJECT_DIR$/socialstachefrontend/src/pages/HomePage.js" />
         <option value="$PROJECT_DIR$/socialstachefrontend/src/components/Navbar.js" />
-        <option value="$PROJECT_DIR$/socialstachefrontend/src/App.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/socialstachefrontend/.gitignore" />
+        <option value="$PROJECT_DIR$/socialstachefrontend/src/components/RoundButton.js" />
+        <option value="$PROJECT_DIR$/socialstachefrontend/src/pages/HomePage.js" />
+        <option value="$PROJECT_DIR$/socialstachefrontend/src/App.css" />
       </list>
     </option>
   </component>
@@ -1588,6 +1556,19 @@
               <item name="SocialStache-Webapp" type="462c0819:PsiDirectoryNode" />
               <item name="socialstachefrontend" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SocialStache-Webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialStache-Webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="socialstachefrontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocialStache-Webapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocialStache-Webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="socialstachefrontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -1634,12 +1615,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540053543634</updated>
-      <workItem from="1540053549150" duration="15439000" />
+      <workItem from="1540053549150" duration="18313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15439000" />
+    <option name="totallyTimeSpent" value="18313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="22" width="1220" height="717" extended-state="0" />
@@ -1710,13 +1691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/store/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-174">
@@ -1733,23 +1707,24 @@
     <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/assets/SocialStacheLogo50.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/pages/HomePage.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="215">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/components/NavbarButton.js">
+    <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/store/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socialstachefrontend/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1763,24 +1738,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/App.css">
+    <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/components/NavbarButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        <state relative-caret-position="168">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socialstachefrontend/.gitignore">
+    <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/components/RoundButton.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/pages/HomePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socialstachefrontend/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="109" column="22" lean-forward="true" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
         </state>
       </provider>
     </entry>
