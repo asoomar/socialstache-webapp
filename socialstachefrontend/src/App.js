@@ -1,37 +1,21 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 import { connect } from 'react-redux';
 import './App.css';
 
 class App extends Component {
   render() {
-    let page = <HomePage />;
-    switch (this.props.page) {
-      case "About": {
-        //page = "About"
-        page = <HomePage />
-      }
-      case "Viral Content": {
-        //page = "Viral Content"
-        page = <HomePage />
-      }
-      case "Hashtags": {
-        page = <HomePage />
-      }
-      case "Templates": {
-        page = <HomePage />
-      }
-      default: {
-        page = <HomePage />
-      }
-
-    }
     return (
-      <div className="App">
-        <Navbar />
-        {page}
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          <Route path={"/"} exact component={HomePage}/>
+          <Route path={"/about"} exact component={AboutPage} />
+        </div>
+      </BrowserRouter>
     );
   }
 }

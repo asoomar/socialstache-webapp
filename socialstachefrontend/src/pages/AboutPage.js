@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import RoundButton from '../components/RoundButton';
 
-class HomePage extends Component {
+class AboutPage extends Component {
   componentDidMount() {
-    this.props.onChangePage("Home");
+    this.props.onChangePage("About");
   };
   render() {
     return (
@@ -12,12 +11,11 @@ class HomePage extends Component {
         <div className="HomePageHeader">
           <div className={"pageContainer"}>
             <div className={"TitleContent"}>
-              Manage Instagram content and grow your account
+              Our Mission
             </div>
             <div className={"SubtitleContent"}>
-              Utilize special tools to find engaging content, manage your hashtags, and grow your account
+              To create stronger relationships between businesses and customers
             </div>
-            <RoundButton name={"Get Started"} />
           </div>
         </div>
       </div>
@@ -42,4 +40,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps, mapDispatchToProps)(AboutPage);

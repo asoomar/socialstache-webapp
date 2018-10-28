@@ -24,11 +24,12 @@
   font-size: large;
 }
 
-.HomePage {
+.Page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .HomePageHeader {
@@ -54,6 +55,7 @@
 
 .navbarButton {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -66,6 +68,7 @@
 
 .navbarButtonSelected {
   color: #FFFFFF;
+  text-decoration: none;
   opacity: 100%;
   margin-left: 10px;
   margin-right: 10px;
