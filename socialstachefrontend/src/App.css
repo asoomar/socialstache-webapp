@@ -24,12 +24,38 @@
   font-size: large;
 }
 
-.Page {
+.feature {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: center;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 20px;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0 20px 20px 20px;
+  color: #222222;
+}
+
+.featureBody {
+  width: 80%;
+  font-family: Montserrat;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #444444;
+}
+
+.featureTitle {
+  padding-top: 20px;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
   width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .HomePageHeader {
@@ -41,6 +67,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
 }
 
 .link {
@@ -94,6 +125,14 @@
   color: #FFFFFF;
 }
 
+.Page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .pageContainer {
   width: 80%;
   display: flex;
@@ -115,8 +154,8 @@
 .SignIn {
   padding: 7px 14px;
   border-radius: 40px;
-  border: #FFFFFF 2px solid;
-  color: #FFFFFF;
+  border: rgba(255, 255, 255, 0.6) 2px solid;
+  color: rgba(255, 255, 255, 0.6);
   font-family: "Montserrat";
   margin: 0px 10px;
   display: flex;
@@ -133,6 +172,54 @@
   margin-bottom: 50px;
 }
 
+.statCell {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statRow {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.statValue {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Montserrat;
+  color: #FFFFFF;
+}
+
+.statName {
+  font-size: 15px;
+  font-family: Montserrat;
+  color: #FFFFFF;
+  width: 30%;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  background-color: #4250f4;
+  padding: 40px;
+  width: 100%;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.statsTitle {
+  color: #FFFFFF;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 30px;
+}
+
 .TitleContent {
   font-size: 55px;
   color: #FFFFFF;
@@ -140,6 +227,49 @@
   font-family: "Montserrat";
   font-weight: bold;
 }
+
+.whyContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 60px 20px 100px 20px;
+  align-items: center;
+}
+
+.whyTitle {
+  color: rgb(81,148,245);
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+}
+
+.whyBody {
+  text-align: left;
+  padding-top: 20px;
+  padding-right: 20%;
+  font-family: Montserrat;
+  color: #444444;
+}
+
+.whyText{
+  flex: 1;
+  padding-left: 5%;
+}
+
+.whyImage {
+  flex: 1;
+}
+
+.RoundButton:hover {
+  background-color: #0d2f6d;
+}
+
+.SignIn:hover {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
 
 @font-face {
   font-family: Montserrat;

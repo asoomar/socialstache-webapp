@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import HomePageFeatures from '../components/HomePageFeatures';
+import WhyStache from '../components/WhyStache';
+import HomeStats from '../components/HomeStats';
 import RoundButton from '../components/RoundButton';
+
 
 class HomePage extends Component {
   componentDidMount() {
@@ -26,6 +30,9 @@ class HomePage extends Component {
             {this.props.loginStatus ? null : <RoundButton name={"Get Started"} />}
           </div>
         </div>
+        <HomePageFeatures />
+        <WhyStache/>
+        <HomeStats/>
       </div>
     );
   }

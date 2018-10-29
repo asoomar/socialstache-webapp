@@ -169,6 +169,8 @@ app.post('/setToken', (req, res) => {
    })
 });
 
+
+
 app.use((req, res, next) => {
   let token = req.get('facebookAuthToken');
   User.findOne({authToken: token})
