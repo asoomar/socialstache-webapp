@@ -11,10 +11,18 @@ class NavbarButton extends Component {
     }
     if(this.props.name === "About") {
       route = "/about";
+    } else if (this.props.name === "Hashtags") {
+      route = "/hashtags"
+    } else if (this.props.name === "Templates") {
+      route = "/templates"
+    } else if (this.props.name === "Media Finder") {
+      route = "/mediafinder"
     }
     return (
-      <div onClick={() => this.props.onChangePage(this.props.name)}>
-        <Link className={selected} to={route}>{this.props.name}</Link>
+      <div>
+        <Link className={selected} to={route} onClick={() => this.props.onChangePage(this.props.name)}>
+          {this.props.name}
+        </Link>
       </div>
     );
   }

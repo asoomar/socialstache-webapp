@@ -1,5 +1,6 @@
 const initialState = {
-  currentPage: 'Home'
+  currentPage: 'Home',
+  loggedIn: false
 };
 
 const reducer = (state = initialState, action) => {
@@ -8,6 +9,12 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         currentPage: action.page
+      }
+    }
+    case 'UPDATE_LOGIN_STATUS': {
+      return {
+        ...state,
+        loggedIn: action.loggedIn
       }
     }
     default: {

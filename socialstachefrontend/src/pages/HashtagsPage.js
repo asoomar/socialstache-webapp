@@ -2,28 +2,24 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import RoundButton from '../components/RoundButton';
 
-class HomePage extends Component {
+class HashtagsPage extends Component {
   componentDidMount() {
-    this.props.onChangePage("Home");
+    if(!this.props.loginStatus){
+      this.props.history.push('/');
+    }
+    this.props.onChangePage("Hashtags");
   };
   render() {
-    let title = "Manage Instagram content and grow your account";
-    let subtitle = "Utilize special tools to find engaging content, manage your hashtags, and grow your account";
-    if(this.props.loginStatus){
-      title = "Your Business Profiles";
-      subtitle = "Choose which profile you want to work on"
-    }
     return (
       <div className={"Page"}>
         <div className="HomePageHeader">
           <div className={"pageContainer"}>
             <div className={"TitleContent"}>
-              {title}
+              Hashtags
             </div>
             <div className={"SubtitleContent"}>
-              {subtitle}
+              Create hashtag sets and add relevant hashtags
             </div>
-            {this.props.loginStatus ? null : <RoundButton name={"Get Started"} />}
           </div>
         </div>
       </div>
@@ -49,4 +45,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps, mapDispatchToProps)(HashtagsPage);

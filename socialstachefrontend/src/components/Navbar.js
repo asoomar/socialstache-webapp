@@ -6,29 +6,33 @@ import URL from '../FetchURL/URL'
 import SignIn from './SignIn';
 
 class Navbar extends Component {
-  componentDidMount() {
-    fetch(`${URL}/isloggedin`, {
-      credentials: "same-origin",
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8',
-      }
-    }).then(response => response.json())
-      .then(response => {
-        console.log(response);
-      })
-  }
   render() {
+    let buttons = (
+      <div className={"navbarButtonPanel"}>
+        <NavbarButton name={"Home"} />
+        <NavbarButton name={"About"} />
+        <SignIn />
+      </div>
+    );
+    if(this.props.loginStatus){
+      buttons = (
+        <div className={"navbarButtonPanel"}>
+          <NavbarButton name={"Home"} />
+          <NavbarButton name={"Hashtags"} />
+          <NavbarButton name={"Templates"} />
+          <NavbarButton name={"Media Finder"} />
+          <NavbarButton name={"About"} />
+          <SignIn />
+        </div>
+      );
+    }
     return (
       <div className="navigation">
         <div className={"navbarTitle"}>
           <img className={"logo"} src={SocialStacheLogo} height={"30px"} alt={"SocialStache Logo"} />
           SocialStache
         </div>
-        <div className={"navbarButtonPanel"}>
-          <NavbarButton name={"Home"} />
-          <NavbarButton name={"About"} />
-          <SignIn />
-        </div>
+        {buttons}
       </div>
     );
   }
@@ -37,7 +41,19 @@ class Navbar extends Component {
 const mapStateToProps = (state) => {
   return {
     page: state.currentPage,
+    loginStatus: state.loggedIn
+  }
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onUpdateLoginStatus: (status) => {
+      dispatch({
+        type: 'UPDATE_LOGIN_STATUS',
+        loggedIn: status
+      })
+    }
   };
 };
 
-export default connect(mapStateToProps)(Navbar);
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
