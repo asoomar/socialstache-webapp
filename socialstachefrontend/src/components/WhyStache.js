@@ -11,10 +11,10 @@ class HomePageFeatures extends Component {
             <div className={"whyTitle"}>Why SocialStache?</div>
             <div className={"whyBody"}>
               SocialStache provides tools that make branding on Instagram easier.
-              Let us manage and suggest hashtags to reach new audiences and to boost
-              your engagement. Let us find valuable content that your followers will
-              enjoy. This all-in-one tool will make your life easier and will shorten
-              the amount of time needed to manage your page.
+              We manage and suggest hashtags in order to reach new audiences and boost
+              your engagement. We find valuable content that your followers enjoy.
+              This all-in-one tool will make your life easier and will shorten
+              the amount of time needed to manage your business profile.
             </div>
           </div>
           <div className={"whyImage"}>

@@ -199,18 +199,13 @@
   width: 30%;
 }
 
-.stats {
-  display: flex;
-  justify-content: center;
-  background-color: #4250f4;
-  padding: 40px;
-  width: 100%;
-}
 
 .statsContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-color: #4250f4;
   width: 100%;
 }
 
@@ -218,6 +213,7 @@
   color: #FFFFFF;
   font-family: "Montserrat Semi-Bold";
   font-size: 30px;
+  padding-top: 40px;
 }
 
 .TitleContent {
