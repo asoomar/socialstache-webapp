@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import RoundButton from '../components/RoundButton';
+import HashtagSetsContent from '../components/HashtagSetsContent';
 
 class HashtagsPage extends Component {
   componentDidMount() {
@@ -22,6 +22,7 @@ class HashtagsPage extends Component {
             </div>
           </div>
         </div>
+        <HashtagSetsContent />
       </div>
     );
   }

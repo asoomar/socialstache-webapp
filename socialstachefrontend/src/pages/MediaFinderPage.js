@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import RoundButton from '../components/RoundButton';
 
 class MediaFinderPage extends Component {
   componentDidMount() {

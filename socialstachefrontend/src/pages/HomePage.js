@@ -4,6 +4,7 @@ import HomePageFeatures from '../components/HomePageFeatures';
 import WhyStache from '../components/WhyStache';
 import HomeStats from '../components/HomeStats';
 import RoundButton from '../components/RoundButton';
+import Accounts from '../components/Accounts';
 
 
 class HomePage extends Component {
@@ -15,7 +16,7 @@ class HomePage extends Component {
     let subtitle = "Utilize special tools to find engaging content, manage your hashtags, and grow your account";
     if(this.props.loginStatus){
       title = "Your Business Profiles";
-      subtitle = "Choose which profile you want to work on"
+      subtitle = "See your account insights"
     }
     return (
       <div className={"Page"}>
@@ -27,12 +28,12 @@ class HomePage extends Component {
             <div className={"SubtitleContent"}>
               {subtitle}
             </div>
-            {this.props.loginStatus ? null : <RoundButton name={"Get Started"} />}
+            {/*{this.props.loginStatus ? null : <RoundButton name={"Get Started"} />}*/}
           </div>
         </div>
-        <HomePageFeatures />
-        <WhyStache/>
-        <HomeStats/>
+        {this.props.loginStatus ? null : <HomePageFeatures />}
+        {this.props.loginStatus ? null : <WhyStache />}
+        {this.props.loginStatus ? <Accounts /> : <HomeStats />}
       </div>
     );
   }

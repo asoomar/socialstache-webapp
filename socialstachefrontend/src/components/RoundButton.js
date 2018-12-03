@@ -6,12 +6,14 @@ import React, { Component } from 'react';
 class RoundButton extends Component {
 
   render() {
+    let className = "RoundButton";
+    if(this.props.fill === false){
+      className = "HollowButton";
+    }
     return (
-      <a href={"#"} className={"link"}>
-        <div className={"RoundButton"}>
-          {this.props.name}
-        </div>
-      </a>
+      <div className={className} onClick={() => this.props.clickHandler()}>
+        {this.props.name}
+      </div>
     );
   }
 }

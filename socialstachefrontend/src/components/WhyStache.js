@@ -18,7 +18,7 @@ class HomePageFeatures extends Component {
             </div>
           </div>
           <div className={"whyImage"}>
-            <img src={laptop} className={"image"} />
+            <img src={laptop} className={"image"} alt={"Laptop Screenshot"}/>
           </div>
         </div>
       </div>

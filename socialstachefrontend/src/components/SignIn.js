@@ -4,33 +4,6 @@ import { connect } from 'react-redux';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 
 class SignIn extends Component {
-  // logIn = () => {
-  //   fetch(`${URL}/auth/facebook`, {
-  //     redirect: 'follow',
-  //     headers: {
-  //       //'Content-Type': 'application/json; charset=utf-8'
-  //     }
-  //   }).then(response => {
-  //     console.log(response);
-  //     return response.json();
-  //   })
-  //     .then(response => {
-  //       if(response.success === true){
-  //         console.log('Successful Login!');
-  //       }
-  //     })
-  // };
-
-  // logIn = () => {
-  //   fetch(`${URL}/auth/facebook`, {
-  //     redirect: 'follow',
-  //     //headers: {'Content-Type': 'application/json; charset=utf-8'}
-  //   }).then(response => {
-  //     console.log(response);
-  //     console.log(response.url);
-  //     window.location.href = response.url;
-  //   })
-  // };
 
   sendToken = (token) => {
     fetch(`${URL}/setToken`, {
@@ -45,6 +18,7 @@ class SignIn extends Component {
       .then(response => {
         console.log(response.message);
         if(response.success){
+          this.props.onUpdateAuthToken(token);
           this.props.onUpdateLoginStatus(true);
         }
       })
@@ -55,6 +29,7 @@ class SignIn extends Component {
 
   logout = () => {
     console.log('User Logged Out');
+    this.props.onChangePage('Home');
     this.props.onUpdateLoginStatus(false);
   };
 
@@ -110,6 +85,18 @@ const mapDispatchToProps = (dispatch) => {
       dispatch({
         type: 'UPDATE_LOGIN_STATUS',
         loggedIn: status
+      })
+    },
+    onUpdateAuthToken: (token) => {
+      dispatch({
+        type: 'UPDATE_AUTH_TOKEN',
+        authToken: token
+      })
+    },
+    onChangePage: (name) => {
+      dispatch({
+        type: 'CHANGE_PAGE',
+        page: name
       })
     }
   };

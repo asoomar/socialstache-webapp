@@ -24,6 +24,39 @@
   font-size: large;
 }
 
+.accountHolder{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.accountImage{
+  border-radius: 50%;
+  width: 80%;
+}
+
+.card {
+  display: flex;
+  border: blue solid 1px;
+  width: 100%;
+  padding: 1%;
+  background-color: #FFFFFF;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Montserrat Semi-Bold";
+}
+
+.editSetButton {
+  border: #555 solid 2px;
+  border-radius: 50px;
+  padding: 2px 8px;
+  color: #555;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 15px;
+  cursor: pointer;
+}
+
 .feature {
   display: flex;
   flex: 1;
@@ -58,6 +91,82 @@
   padding-bottom: 5%;
 }
 
+.generateSetButton {
+  border: #4250f4 solid 2px;
+  background-color: #4250f4;
+  border-radius: 50px;
+  padding: 2px 8px;
+  color: #FFFFFF;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hashtagSample {
+  border: #4250f4 solid 2px;
+  border-radius: 50px;
+  padding: 2px 8px;
+  color: #4250f4;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 15px;
+  margin: 2px;
+}
+
+.hashtagSamples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hashtagCount {
+  margin-bottom: 20px;
+  color: #555555;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 20px;
+}
+
+.Hashtag {
+  display: flex;
+  border: #4250f4 solid 2px;
+  background-color: #4250f4;
+  border-radius: 50px;
+  padding: 4px 10px;
+  color: #FFFFFF;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 20px;
+  margin: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.HashtagX {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 50px;
+  margin-left: 8px;
+  padding: 2px 8px;
+  color: #4250f4;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.HollowButton {
+  border: #565656 solid 2px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #323233;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .HomePageHeader {
   background: rgb(81,148,245);
   background: linear-gradient(90deg, rgba(81,148,245,1) 0%, rgba(23,84,196,1) 33%, rgba(0,50,212,1) 100%);
@@ -74,10 +183,26 @@
   height: auto;
 }
 
+.imageHolder {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: purple solid 1px;
+}
+
 .link {
   text-decoration: none;
   display: flex;
   align-self: center;
+}
+
+.loggedInPage {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #EEEEEE;
 }
 
 .logo {
@@ -139,16 +264,318 @@
   flex-direction: column;
 }
 
+.profileColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: stretch;
+}
+
+.profileLabel {
+  font-family: Montserrat;
+  color: #999999;
+}
+
+.profileNumbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
+.profileStat {
+  flex: 1;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileStats {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileTitle {
+  font-family: Montserrat;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
 .RoundButton {
   background-color: #0e3377;
   padding: 15px 30px;
-  border-radius: 40px;
+  border-radius: 10px;
   color: #EEEEEE;
   font-family: "Montserrat Semi-Bold";
+  cursor: pointer;
+}
+
+.setPageGeneralButton {
+  border: #555 solid 2px;
+  border-radius: 50px;
+  padding: 2px 8px;
+  color: #555;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.setPageRenameButton {
+  border: #4250f4 solid 2px;
+  background-color: #4250f4;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding: 2px 8px;
+  color: #FFFFFF;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.setPageDeleteButton {
+  border: #ad081b solid 2px;
+  background-color: #ad081b;
+  border-radius: 50px;
+  padding: 2px 8px;
+  color: #FFFFFF;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.setPageBackButtonContainer {
   display: flex;
-  align-self: center;
+  flex: 1;
+}
+
+.setPageButtonPanel {
+  display: flex;
   flex-direction: row;
-  flex-basis: auto;
+}
+
+.setPageRenameBar {
+  display: flex;
+  border: brown 1px solid;
+  flex-direction: column;
+  align-items: center;
+}
+
+.setPageRenameSubmitButton {
+  border: #4250f4 solid 2px;
+  background-color: #4250f4;
+  border-radius: 50px;
+  padding: 2px 8px;
+  color: #FFFFFF;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.setPageRenameButtonPanel {
+  display: flex;
+  width: 100%;
+  border: blue 1px solid;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.setPageAddTagsContainer {
+  display: flex;
+  padding: 20px 0px;
+}
+
+.setPageAddTagsInput {
+  flex: 1;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top: #AAAAAA 2px solid;
+  border-bottom: #AAAAAA 2px solid;
+  border-left: #AAAAAA 2px solid;
+  border-right: 0px solid;
+  font-size: 20px;
+  padding: 2px 10px;
+  font-family: "Montserrat Semi-Bold";
+}
+
+.addTagsButton {
+  border: #4250f4 solid 2px;
+  background-color: #4250f4;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding: 8px 20px;
+  color: #FFFFFF;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.setPageContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.setPageTitle {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 40px;
+}
+
+.setPageTopBar {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+
+.setPageSuggestTags {
+  display: flex;
+}
+
+.setPageSuggestTagsButton {
+  border: #4250f4 solid 2px;
+  background-color: #4250f4;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding: 8px 20px;
+  color: #FFFFFF;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.setPageSuggestTagsInput {
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top: #555555 solid 2px;
+  border-bottom: #555555 solid 2px;
+  border-left: #555555 solid 2px;
+  /*background-color: #999999;*/
+  padding: 8px 20px;
+  color: #555555;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 20px;
+}
+
+.setPageSuggestTagsInput [type=file]{
+  cursor: pointer;
+  display: block;
+  font-size: 999px;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+
+.setBody {
+  color: #555555;
+  font-family: "Montserrat Semi-Bold";
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.setBox {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 7px 7px 20px -1px rgba(0,0,0,0.13);
+}
+
+.setButton {
+  padding: 5px;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.setHashtags {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.setHashtagsDisplayed {
+  flex: 1;
+  color: #333333;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Montserrat Semi-Bold";
+}
+
+.setHashtagsX {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.setHashtagsXIcon {
+  background-color: rgba(0, 0, 0, .3);
+  color: #FFFFFF;
+  padding: 2px 7px;
+  border-radius: 50px;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.setText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.setTitle {
+  align-items: flex-start;
+  padding-bottom: 3px;
+  display: flex;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 25px;
+}
+
+.setsBody {
+  padding-top: 20px;
+  padding-bottom: 600px;
+}
+
+.setsButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.setsContainer {
+  /*border: red solid 1px;*/
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.singleLineTextInput {
+  border: green 1px solid;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%;
 }
 
 .SignIn {
@@ -216,6 +643,77 @@
   padding-top: 40px;
 }
 
+.tagsContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 300px;
+}
+
+.templateBodyDisplayed {
+  text-align: left;
+  white-space: pre;
+}
+
+.templateInputContainer {
+  padding-top: 20px;
+  display: flex;
+}
+
+.templateInput {
+  flex: 1;
+  border-radius: 20px;
+  border: #AAAAAA 2px solid;
+  font-size: 20px;
+  padding: 10px 10px;
+  resize: none;
+  font-family: "Montserrat Semi-Bold";
+}
+
+.templateSave {
+  border: #4250f4 solid 2px;
+  margin: 5px 5px;
+  background-color: #4250f4;
+  border-radius: 50px;
+  padding: 3px 10px;
+  color: #FFFFFF;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.templateSaveGoBack {
+  border: #4250f4 solid 2px;
+  margin: 5px 5px;
+  border-radius: 50px;
+  padding: 3px 10px;
+  color: #4250f4;
+  font-family: "Montserrat Semi-Bold";
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.templateSaveContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.textInput {
+  width: 100%;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top: #AAAAAA 2px solid;
+  border-bottom: #AAAAAA 2px solid;
+  border-left: #AAAAAA 2px solid;
+  border-right: 0px solid;
+  font-size: 15px;
+  padding: 0px 10px;
+  font-family: "Montserrat Semi-Bold";
+}
+
 .TitleContent {
   font-size: 55px;
   color: #FFFFFF;
@@ -266,6 +764,13 @@
   border-color: #FFFFFF;
 }
 
+textarea:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
 
 @font-face {
   font-family: Montserrat;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import RoundButton from '../components/RoundButton';
+import TemplatesContent from '../components/TemplatesContent';
 
 class TemplatesPage extends Component {
   componentDidMount() {
@@ -22,6 +22,7 @@ class TemplatesPage extends Component {
             </div>
           </div>
         </div>
+        <TemplatesContent />
       </div>
     );
   }
