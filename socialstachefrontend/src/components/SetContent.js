@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import URL from '../FetchURL/URL';
 import Hashtag from './Hashtag';
-import image2Base64 from 'image-to-base64';
+import axios from 'axios';
 
 class SetContent extends Component {
   state = {
@@ -10,7 +10,7 @@ class SetContent extends Component {
     rename: '',
     tags: '',
     file: null,
-    fileName: 'Choose a File'
+    fileName: 'Choose File'
   };
 
   clickSettings = () => {
@@ -35,15 +35,6 @@ class SetContent extends Component {
 
   handleTags = (event) => {
     this.setState({tags: event.target.value});
-  };
-
-  getBase64 = (file) => {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = error => reject(error);
-    })
   };
 
   setFileName = (event) => {
@@ -71,6 +62,31 @@ class SetContent extends Component {
     }).then(response => response.json())
       .then(response => console.log(response))
       .catch(error => console.log(error))
+  };
+
+  onSubmitForm = (e) => {
+    e.preventDefault();
+    const formData = new FormData();
+    formData.append('inputfile',this.state.file);
+    const config = {
+      headers: {
+        'content-type': 'multipart/form-data'
+      }
+    };
+    axios.post(`${URL}/upload`,formData,config)
+    .then(response => {
+      console.log(response);
+      if(response.data.success){
+        let addTagsText = response.data.tags.map(tag => '#' + tag);
+        addTagsText = addTagsText.join(' ');
+        this.setState({tags: addTagsText, file: null, fileName: 'Choose File'});
+      } else {
+        console.log('Unable to suggest tags');
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    });
   };
 
   clickDelete = () => {
@@ -204,7 +220,8 @@ class SetContent extends Component {
           <div className={"addTagsButton"} onClick={()=>this.addTags()}>
             Add
           </div>
-          <form className="setPageSuggestTags" method={"post"} encType={"multipart/form-data"} action={`${URL}/upload`}>
+          {/*<form className="setPageSuggestTags" method={"post"} encType={"multipart/form-data"} action={`${URL}/upload`}>*/}
+          <form className="setPageSuggestTags" onSubmit={this.onSubmitForm}>
             <label className="setPageSuggestTagsInput">
               {this.state.fileName}
               <input type={"file"}
@@ -212,7 +229,7 @@ class SetContent extends Component {
                      onChange={this.setFileName}
                      accept={".jpg, .jpeg, .png"}/>
             </label>
-            <input className={"setPageSuggestTagsButton"} type={"submit"} name={"Suggest"}/>
+            <input className={"setPageSuggestTagsButton"} type={"submit"} value={"Suggest"}/>
           </form>
         </div>
         <div className={"hashtagCount"}>

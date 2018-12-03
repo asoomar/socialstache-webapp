@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-bottom: 300px;
 }
 
 .accountImage{
@@ -37,7 +38,6 @@
 
 .card {
   display: flex;
-  border: blue solid 1px;
   width: 100%;
   padding: 1%;
   background-color: #FFFFFF;
@@ -45,6 +45,8 @@
   margin-top: 15px;
   margin-bottom: 15px;
   font-family: "Montserrat Semi-Bold";
+  border-radius: 15px;
+  box-shadow: 7px 7px 20px -1px rgba(0,0,0,0.13);
 }
 
 .editSetButton {
@@ -189,7 +191,6 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  border: purple solid 1px;
 }
 
 .link {
@@ -653,7 +654,7 @@
 
 .templateBodyDisplayed {
   text-align: left;
-  white-space: pre;
+  white-space: pre-wrap;
 }
 
 .templateInputContainer {

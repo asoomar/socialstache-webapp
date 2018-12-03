@@ -9,7 +9,7 @@ import Clarifai from 'clarifai';
 import multer from 'multer';
 import path from'path';
 
-const URL = 'https://bec6d070.ngrok.io';
+const URL = 'https://9d627f81.ngrok.io';
 
 const storage = multer.diskStorage({
   destination: function(req, file, cb) {
@@ -77,19 +77,33 @@ app.post('/suggestTags', (req, res) => {
 });
 
 app.post('/upload', upload.single('inputfile'), (req, res) => {
-  console.log('Updating files');
-  console.log(`${URL}/${req.file.destination}/${req.file.filename}`);
+  //console.log('Updating files');
+  const image = `${URL}/${req.file.destination}/${req.file.filename}`;
   clarifai.models.initModel({id: Clarifai.GENERAL_MODEL, version: "aa7f35c01e0642fda5cf400f543e7c40"})
     .then(generalModel => {
-      return generalModel.predict(`${URL}/${req.file.destination}/${req.file.filename}`);
+      return generalModel.predict(image);
     })
     .then(response => {
       let concepts = response['outputs'][0]['data']['concepts'];
-      res.json(concepts);
+      console.log(concepts);
+      let tags = concepts.filter(item => item.value > 0.6).map(item => item.name);
+      fetch(`https://api.ritekit.com/v1/stats/hashtag-suggestions?image=${image}&client_id=${process.env.RITEKIT_CLIENT_ID}`, {
+        headers: { 'Content-Type': 'application/json; charset=utf-8' }
+      }).then(response => response.json())
+        .then(response => {
+          console.log('Below is the response from RiteKit');
+          console.log(response.data);
+          let moreTags = response.data.map(item => item.hashtag);
+          Array.prototype.push.apply(tags, moreTags);
+          tags = tags.filter(tag => tag.indexOf(' ') === -1);
+          res.json({success: true, tags: tags});
+        }).catch(error => {
+          res.json({success: true, tags: tags, message: 'Partial Success suggesting tags', error: error});
+      })
     })
     .catch(error => {
       console.log(error);
-      res.json(error)
+      res.json({success: false, error: error})
     })
 });
 
