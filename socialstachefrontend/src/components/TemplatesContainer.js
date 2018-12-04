@@ -93,7 +93,7 @@ class TemplatesContainer extends Component {
     return (
       <div className={"setsContainer"}>
         <div className={"setsButtonContainer"}>
-          <RoundButton name={"New Post Template"} fill={false} clickHandler={this.newTemplate}/>
+          <RoundButton fill={true} clickHandler={this.newTemplate}/>
         </div>
         <div className={"setsBody"}>
           {this.props.templates.map((template) => {

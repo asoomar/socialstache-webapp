@@ -1,3 +1,44 @@
+.aboutCard {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 7px 7px 20px -1px rgba(0,0,0,0.13);
+  font-family: "Montserrat Semi-Bold";
+  padding: 30px 10px;
+}
+
+.aboutCardBody {
+  color: #333333;
+  padding-bottom: 10px;
+}
+
+.aboutCardContainer {
+  flex: 1;
+  padding: 30px;
+}
+
+.aboutCardPhoto {
+  border-radius: 500px;
+  width: 50%;
+}
+
+.aboutCardTitle {
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.aboutCardsContainer {
+  display: flex;
+}
+
+.aboutwho {
+  font-size: 30px;
+  font-family: "Montserrat Semi-Bold";
+  color: #333333;
+  padding-top: 20px;
+  text-align: center;
+}
+
 .App {
   display: flex;
   text-align: center;
@@ -210,6 +251,13 @@
   margin-right: 10px;
 }
 
+.mediaFinderBody {
+  padding: 80px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-size: 30px;
+}
+
 .navbarButton {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -308,11 +356,13 @@
 }
 
 .RoundButton {
-  background-color: #0e3377;
-  padding: 15px 30px;
-  border-radius: 10px;
-  color: #EEEEEE;
-  font-family: "Montserrat Semi-Bold";
+  background-color: #4250f4;
+  padding: 4px 18px;
+  border-radius: 100px;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-size: 45px;
+  box-shadow: 7px 7px 20px -1px rgba(0,0,0,0.3);
   cursor: pointer;
 }
 
@@ -581,6 +631,7 @@
 
 .SignIn {
   padding: 7px 14px;
+  text-decoration: none;
   border-radius: 40px;
   border: rgba(255, 255, 255, 0.6) 2px solid;
   color: rgba(255, 255, 255, 0.6);
@@ -596,7 +647,7 @@
 .SubtitleContent {
   font-size: 15px;
   color: #EEEEEE;
-  font-family: "Montserrat Light";
+  font-family: "Montserrat";
   margin-bottom: 50px;
 }
 
@@ -635,6 +686,7 @@
   align-items: center;
   background-color: #4250f4;
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .statsTitle {
@@ -757,7 +809,7 @@
 }
 
 .RoundButton:hover {
-  background-color: #0d2f6d;
+  opacity: 0.95;
 }
 
 .SignIn:hover {

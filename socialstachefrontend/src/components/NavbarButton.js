@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class NavbarButton extends Component {
   render() {
     let selected = 'navbarButton';
-    let route = "/";
+    let route = "";
     if(this.props.name === this.props.page) {
       selected = 'navbarButtonSelected';
     }

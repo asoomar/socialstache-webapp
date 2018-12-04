@@ -66,7 +66,7 @@ class HashtagSetsContainer extends Component {
     return (
       <div className={"setsContainer"}>
         <div className={"setsButtonContainer"}>
-          <RoundButton name={"New Hashtag Set"} fill={false} clickHandler={this.newSet}/>
+          <RoundButton fill={true} clickHandler={this.newSet}/>
         </div>
         <div className={"setsBody"}>
           {this.props.sets.map((set) => {

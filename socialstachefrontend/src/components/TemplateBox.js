@@ -21,7 +21,9 @@ class TemplateBox extends Component {
     //let match = re.exec(copy);
     //debugger;
     //console.log(match);
-    console.log(matches);
+    if(matches === null) {
+      return;
+    }
     for (let i = 0; i < matches.length; i++) {
       let params = matches[i].slice(2, matches[i].length - 2).split(',');
       if (params.length !== 2) {

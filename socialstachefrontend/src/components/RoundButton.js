@@ -12,7 +12,7 @@ class RoundButton extends Component {
     }
     return (
       <div className={className} onClick={() => this.props.clickHandler()}>
-        {this.props.name}
+        +
       </div>
     );
   }

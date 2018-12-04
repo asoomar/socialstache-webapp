@@ -13,10 +13,10 @@ class HomeStats extends Component {
             </div>
             <div className={"statCell"}>
               <div className={"statValue"}>50B</div>
-              <div className={"statName"}>photos shared daily</div>
+              <div className={"statName"}>total photos shared</div>
             </div>
             <div className={"statCell"}>
-              <div className={"statValue"}>4.2B</div>
+              <div className={"statValue"}>3.5B</div>
               <div className={"statName"}>likes per day</div>
             </div>
           </div>

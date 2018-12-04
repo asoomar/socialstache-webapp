@@ -21,6 +21,9 @@ class MediaFinderPage extends Component {
             </div>
           </div>
         </div>
+        <div className={"mediaFinderBody"}>
+          This feature is coming soon...
+        </div>
       </div>
     );
   }

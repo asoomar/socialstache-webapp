@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import URL from '../FetchURL/URL';
 import { connect } from 'react-redux';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
+import { Link } from 'react-router-dom';
 
 class SignIn extends Component {
 
@@ -42,9 +43,9 @@ class SignIn extends Component {
     let fbContent;
     if (this.props.loginStatus) {
       fbContent = (
-        <div className={"SignIn"} onClick={this.logout}>
+        <Link className={"SignIn"} to={"/"} onClick={this.logout}>
           Sign Out
-        </div>);
+        </Link>);
     } else {
       fbContent = (<FacebookLogin
         appId="1852889465015879"

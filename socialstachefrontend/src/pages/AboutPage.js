@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import AboutPageInfo from '../components/AboutPageInfo';
 
 class AboutPage extends Component {
   componentDidMount() {
@@ -7,7 +8,7 @@ class AboutPage extends Component {
   };
   render() {
     return (
-      <div className={"Page"}>
+      <div className={"Page"} style={{backgroundColor: "#EEEEEE"}}>
         <div className="HomePageHeader">
           <div className={"pageContainer"}>
             <div className={"TitleContent"}>
@@ -18,6 +19,7 @@ class AboutPage extends Component {
             </div>
           </div>
         </div>
+        <AboutPageInfo />
       </div>
     );
   }
