@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "body-parser": "^1.18.3",
     "clarifai": "^2.9.0",
@@ -26,6 +27,5 @@
     "request-promise": "^4.2.2"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.7.0"
   }
 }
