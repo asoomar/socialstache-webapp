@@ -34,6 +34,7 @@ const MongoStore = ms(session);
 
 let app = express();
 
+app.use(express.static(path.join(__dirname, '../socialstachefrontend/build')));
 app.use('/uploads', express.static(path.join(__dirname, '/../uploads')));
 
 app.use(cookieParser('hi'));

@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import HomePageFeatures from '../components/HomePageFeatures';
 import WhyStache from '../components/WhyStache';
 import HomeStats from '../components/HomeStats';
-import RoundButton from '../components/RoundButton';
 import Accounts from '../components/Accounts';
 
 
