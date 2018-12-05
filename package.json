@@ -28,13 +28,5 @@
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0"
-  },
-  "proxy": {
-    "/auth/": {
-      "target": "http://localhost:3000"
-    },
-    "/api/": {
-      "target": "http://localhost:3000"
-    }
   }
 }
