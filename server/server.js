@@ -10,7 +10,7 @@ import multer from 'multer';
 import path from'path';
 
 let URL = 'https://lit-waters-99772.herokuapp.com';
-URL = 'https://9d627f81.ngrok.io';
+//URL = 'https://9d627f81.ngrok.io';
 
 const storage = multer.diskStorage({
   destination: function(req, file, cb) {
