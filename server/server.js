@@ -9,7 +9,8 @@ import Clarifai from 'clarifai';
 import multer from 'multer';
 import path from'path';
 
-const URL = 'https://lit-waters-99772.herokuapp.com';
+let URL = 'https://lit-waters-99772.herokuapp.com';
+URL = 'https://9d627f81.ngrok.io';
 
 const storage = multer.diskStorage({
   destination: function(req, file, cb) {
@@ -53,20 +54,10 @@ app.get('/', (req, res) => {
   res.send('Testing');
 });
 
-const getBase64 = (file) => {
-  return new Promise((resolve, reject) => {
-    console.log('Converting to Base64');
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => resolve(reader.result);
-    reader.onerror = error => reject(error);
-  })
-};
-
 app.post('/suggestTags', (req, res) => {
   clarifai.models.initModel({id: Clarifai.GENERAL_MODEL, version: "aa7f35c01e0642fda5cf400f543e7c40"})
     .then(generalModel => {
-      return generalModel.predict(req.body.image); //for Base64
+      return generalModel.predict(req.body.image);
     })
     .then(response => {
       let concepts = response['outputs'][0]['data']['concepts'];
@@ -97,14 +88,14 @@ app.post('/upload', upload.single('inputfile'), (req, res) => {
           let moreTags = response.data.map(item => item.hashtag);
           Array.prototype.push.apply(tags, moreTags);
           tags = tags.filter(tag => tag.indexOf(' ') === -1);
-          res.json({success: true, tags: tags});
+          res.json({success: true, tags: tags, image: image});
         }).catch(error => {
           res.json({success: true, tags: tags, message: 'Partial Success suggesting tags', error: error});
       })
     })
     .catch(error => {
       console.log(error);
-      res.json({success: false, error: error})
+      res.json({success: false, error: error, image: image})
     })
 });
 
@@ -253,7 +244,6 @@ app.post('/deleteSet', (req, res) => {
 app.post('/renameSet', (req, res) => {
   HashtagSet.findByIdAndUpdate(req.body.id, {title: req.body.title})
     .then(result => {
-      console.log('Set was successfully renamed!', result);
       res.json({success: true, message: 'Set was successfully renamed!'});
     })
     .catch(error => {
