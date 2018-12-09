@@ -13,7 +13,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class TestFrontend(unittest.TestCase):
 
-    BASE_URL = 'https://localhost:3000/'
+    BASE_URL = 'http://lit-waters-99772.herokuapp.com/'
     CHROME_DRIVER_PATH = './chromedriver-2'
     HOLD_WINDOW = False
     TIMEOUT = 10
@@ -126,7 +126,9 @@ class TestFrontend(unittest.TestCase):
 
         # We need this sleep so the new page continues to load
         time.sleep(4)
-        self._wait.until(EC.title_is('Facebook'), 'The new page title is not Facebook')
+        #self._wait.until(EC.title_is('Facebook'), 'The new page title is not Facebook')
+        self._wait.until(EC.url_contains('facebook'),
+                         'The Home url does not contain: "{}"'.format('facebook'))
 
         self._close_background_windows(main_window)
 
